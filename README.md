@@ -11,22 +11,22 @@ date: 2023-02-03 17:00:00 +0200
 - [Inhaltsverzeichnis](#inhaltsverzeichnis)
 - [Motivation](#motivation)
 - [Vorbereitung](#vorbereitung)
-    - [Werkzeuge](#werkzeuge)
-    - [Material](#material)
-    - [Empfohlene Vorkentnisse](#empfohlene-vorkentnisse)
+  - [Werkzeuge](#werkzeuge)
+  - [Material](#material)
+  - [Empfohlene Vorkenntnisse](#empfohlene-vorkenntnisse)
 - [Bauanleitung](#bauanleitung)
-    - [Arduino](#arduino)
-    - [Gemeinsame 5V Quelle](#gemeinsame-5v-quelle)
-    - [Display](#display)
-    - [LED Ring](#led-ring)
-    - [Durchfluss- und Temperatursensor](#durchfluss--und-temperatursensor)
-      - [Werkzeuge und Material](#werkzeuge-und-material)
-    - [Druckknopf zum Ein- und Ausschalten](#druckknopf-zum-ein--und-ausschalten)
-    - [Stromversorgung & Ladepad](#stromversorgung--ladepad)
-    - [Schaltplan](#schaltplan)
-    - [Verkabelung](#verkabelung)
-    - [Gehäuse](#gehuse)
-    - [Komponenten zusammensetzen](#komponenten-zusammensetzen)
+  - [Arduino](#arduino)
+  - [Gemeinsame 5V Quelle](#gemeinsame-5v-quelle)
+  - [Display](#display)
+  - [LED Ring](#led-ring)
+  - [Durchfluss- und Temperatursensor](#durchfluss--und-temperatursensor)
+    - [Werkzeuge und Material](#werkzeuge-und-material)
+  - [Druckknopf zum Ein- und Ausschalten](#druckknopf-zum-ein--und-ausschalten)
+  - [Stromversorgung & Ladepad](#stromversorgung--ladepad)
+  - [Schaltplan](#schaltplan)
+  - [Verkabelung](#verkabelung)
+  - [Gehäuse](#gehuse)
+  - [Komponenten zusammensetzen](#komponenten-zusammensetzen)
 - [Ausblick](#ausblick)
 <!-- /TOC -->
 
@@ -60,7 +60,7 @@ EcoShower hilft dem Nutzer dabei, mehr über seinen Energiebedarf beim Duschen z
 - Steckernetzteil mit 5V-7V Ausgang und mind. 1,2 A Stromfluss mit Rundstecker
 - Buchse, passend zum Rundstecker des Netzteils
 - [Wasserdurchfluss Sensor](https://www.amazon.de/dp/B07XDZ25SY?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-- [Temperatursensor zum einschrauben (inkl. Thermocouple)](https://www.amazon.de/dp/B09TSFDC6C?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- [Temperatursensor zum Einschrauben (inkl. Thermocouple)](https://www.amazon.de/dp/B09TSFDC6C?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 - Acrylglas, schwarz getönt
 - [3 Saugnäpfe mit Gewinde](https://www.amazon.de/dp/B084C1L13D?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 - diverse Schaltlitzen (0,14mm² - 0,25mm²)
@@ -71,7 +71,9 @@ EcoShower hilft dem Nutzer dabei, mehr über seinen Energiebedarf beim Duschen z
 - 1m Kabel mit 5 Adern (zB. Netzwerkkabel), alternativ können 5 Litzen verdrillt werden
 - Schneidöl (zb. WD 40)
 
-## Empfohlene Vorkentnisse
+Die Anschaffungskosten für die hier aufgeführten Materialien belaufen sich auf zwischen 120-150€.
+
+## Empfohlene Vorkenntnisse
 
 - Löten
 - 3D-Druck
@@ -91,7 +93,7 @@ Steckbuchsen und Steckleisten einlöten und die Litzen auf die Steckleisten löt
 
 Die Litzen direkt auf das Arduino Board löten (kompaktere Lösung, aber aufwendiger abzuändern). Die Litzen lötest du am besten erst an, wenn du eine Komponente mit dem Arduino verbinden willst.
 
-Den Quellcode des Projekts kannst du [hier](https://github.com/cbm-instructions/sparfuechse/blob/main/code/code.ino) herunterladen. Denke daran, dass du in deiner Arduino IDE zunächst die benötigten Liraries für den Sketch installieren musst, damit dieser lauffähig ist.
+Den Quellcode des Projekts kannst du [hier](https://github.com/cbm-instructions/sparfuechse/blob/main/code/code.ino) herunterladen. Denke daran, dass du in deiner Arduino IDE zunächst die benötigten Libraries für den Sketch installieren musst, damit dieser lauffähig ist.
 Wenn du den Quellcode auf den Arduino geladen hast, bist du mit der Vorbereitung des Arduinos fertig.
 
 ## Gemeinsame 5V Quelle
@@ -106,7 +108,7 @@ In dieser Schaltung übersteigt der Strombedarf der Komponenten geradeso nicht d
 
 ## Durchfluss- und Temperatursensor
 
-Der Durchfluss- und Temperatursensor, welcher zwischen der Duschamatur und dem Schlauch zum Duschkopf montiert wird, bildet das Herzstück von ecoShower. Durch diese Vorrichtung ist es möglich, in sekündlichen Intervallen die exakten Kosten für das Verbrauche Wasser zu berechnen.
+Der Durchfluss- und Temperatursensor, welcher zwischen der Duschamartur und dem Schlauch zum Duschkopf montiert wird, bildet das Herzstück von ecoShower. Durch diese Vorrichtung ist es möglich, in sekündlichen Intervallen die exakten Kosten für das verbrauchte Wasser zu berechnen.
 
 ### Werkzeuge und Material
 
@@ -123,8 +125,8 @@ Der Temperatursensor soll die Temperatur möglichst präzise messen. Dazu bauen 
 
 Zunächst musst du eine Stelle am Gehäuse des Durchfluss Sensors finden, die sich für den Einbau eignet. Maßgeblich dafür sind die Maße des Temperatursensors. Am besten eignet sich eine flache Stelle am Gehäuse, rund geht aber auch.
 Ist eine geeignete Stelle gefunden, wird das Bohrloch angezeichnet und mit einem einzelnen, kräftigen Schlag mit dem Körner angekörnt.
-Auf diese Stelle gibst du nun ein paar Tropfen Schneidöl und borst mit dem 5 mm Bohrer vorsichtig ein gerades Loch durch das Material. Dabei immer wieder ein paar tropfen Öl auftragen.
-Das fertige Bohrloch besitzt noch einen Grad. welchen du mit einem Senker entfernen kannst.
+Auf diese Stelle gibst du nun ein paar Tropfen Schneidöl und bohrst mit dem 5 mm Bohrer vorsichtig ein gerades Loch durch das Material. Dabei immer wieder ein paar tropfen Öl auftragen.
+Das fertige Bohrloch besitzt noch einen Grad, welchen du mit einem Senker entfernen kannst.
 
 Damit der Temperatursensor sauber eingeschraubt werden kann, müssen wir jetzt das Gewinde schneiden.
 Wenn du noch kein Gewinde geschnitten hast, kannst du hier nachlesen, wie das geht.
@@ -135,7 +137,7 @@ Jetzt kann der Sensor eingeschraubt werden. Falls die Hülse noch beweglich (und
 
 ## Druckknopf zum Ein- und Ausschalten
 
-Den Schalter zum Ein- und Ausschalten schalten wir parallel zum ein- ausschalter der Stromversorgung (Boardbeschreibung). Löte die Litzen wie im Schaltplan beschrieben, bzw. wie hier gezeigt, an. 
+Den Schalter zum Ein- und Ausschalten schalten wir parallel zum Ein-/Ausschalter der Stromversorgung (Boardbeschreibung). Löte die Litzen wie im Schaltplan beschrieben, bzw. wie hier gezeigt, an.
 
 <img src="/images/sparfuechse/ladeplatine.JPG" width="500">
 
@@ -158,7 +160,7 @@ Hier siehst du den Schaltplan in einer vereinfachten Breadboard-Ansicht. Manche 
 
 ## Verkabelung
 
-Wenn du die Komponenten mithilfe des Schaltplans verbindest, solltest du auf saubere Lötverbindungen achten. Treten später Fehler auf, sind diese nämlich meist schwer zu finden. Wenn Litzen auf Platinen gelötet werden, empfiehlt sich die Verwendung von Schrumpfschlauch, um ein Abknicken zu verhindern. 
+Wenn du die Komponenten mithilfe des Schaltplans verbindest, solltest du auf saubere Lötverbindungen achten. Treten später Fehler auf, sind diese nämlich meist schwer zu finden. Wenn Litzen auf Platinen gelötet werden, empfiehlt sich die Verwendung von Schrumpfschlauch, um ein Abknicken zu verhindern.
 
 <img src="/images/sparfuechse/schrumpfschlauch_vergleich.jpg" width="500">
 
@@ -179,9 +181,12 @@ Nun geht es darum, die einzelnen Komponenten möglichst platzsparend zusammenzus
 
 Geht man nach der hier beschriebenen Anleitung vor, hält man danach ein voll funktionsfähigen Gerät in den Händen. Jedoch gibt es an dieser Version noch einiges an Optimierungspotential. Ein paar Aspekte sind im Folgenden bereits festgehalten. Weitere Anregungen und Kritik sind jederzeit erwünscht!
 
-<img src="/images/sparfuechse/fertiges_produkt.jpg" width="500">
+<span style="display: inline-block;">
+  <img src="/images/sparfuechse/fertiges_produkt.jpg" width="500">
+  <img src="/images/sparfuechse/fertiges_produkt_2.jpg" width="500">
+</span>
 
 ## Potentielle Verbesserungen
 
-- Das Gehäuse ist zum atkuellen Zeitpunkt noch nicht 100% wasserdicht. Hier besteht demnach noch Verbesserungspotential.
-- Die Ladestation/das induktive Laden funktioniert leider nur mäßig gut. Wie man in den obigen Abbildungen sehen kann, wurde auch beim Zusammenbau der Ladestation bereits Material abgetragen, um dem entgegenzuwirken. Ein Neuentwurf der gesamten Ladestation wäre auf lange sicht definitiv sinnvoll.
+- Das Gehäuse ist zum aktuellen Zeitpunkt noch nicht 100% wasserdicht. Hier besteht demnach noch Verbesserungspotential.
+- Die Ladestation/das induktive Laden funktioniert leider nur mäßig gut. Wie man in den obigen Abbildungen sehen kann, wurde auch beim Zusammenbau der Ladestation bereits Material abgetragen, um dem entgegenzuwirken. Ein Neuentwurf der gesamten Ladestation wäre auf lange Sicht definitiv sinnvoll.
